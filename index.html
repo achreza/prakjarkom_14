@@ -25,9 +25,7 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-expand-md" role="navigation">
           <div class="container">
             <div class="navbar-header page-scroll">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                <i class="fa fa-bars">HE</i>
-              </button>
+              
             </div>
             
           </div>
@@ -40,16 +38,105 @@
             <div class="col-lg-10">
               <div class="ibox">
                 <div class="ibox-content">
-                  <div class="float-right">
-                    <button class="btn btn-white btn-xs" type="button">Tes</button>
-                  </div>
+                  <section id="team" class="white-section team  mt-md-3">
+                    <div class="row m-b-lg m-t-lg p-md-5 m-md-2">
+                        <div class="col-md-6">
+            
+                            
+            
+                            <div class="profile-image">
+                                <img src="img/pp.jpg" class="rounded-circle circle-border m-b-md" alt="profile">
+                            </div>
+                            <div class="profile-info text-light">
+                                <div class="text-dark">
+                                    <div>
+                                        <h2 class="no-margins">
+                                            Achmad Fahreza Alif Pahlevi
+                                        </h2>
+                                        <h4>200605110098</h4>
+                                        <small>
+                                           Praktikum Jaringan Komputer D
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+            
+            
+                    </div>
+                </section>
+                  <hr>
                   <div class="text-center article-title">
-                    <span class="text-muted"><i class="fa fa-clock-o"></i> 20-20-20</span>
-                    <h1>INI JUDUL</h1>
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 21 Mei 2022</span>
+                    <h1>Instalasi Web Server</h1>
                   </div>
-                  <p>HEADER</p>
+                  <p class="text-dark">1. Mengecek IP kita dahulu</p>
                   <img class="img-fluid rounded mx-auto d-block" src="img/prak14/1.png" title="gambar" /><br />
-                  <p>ISI TEKS</p>
+                  <p class="ml-sm-5">Disini kita akan mengecek ip kita dulu dengan cara mengetikkan perintah sudo ip a</p>
+
+                  <p class="text-dark">2. Menginstall Apache di Linux Server</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/2,2.png" title="gambar" /><br />
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/2.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita akan menginstall apache sebagai web server nantinya, dengan menggunakan command sudo apt install apache2</p>
+
+                  <hr>
+                  <div class="text-center article-title">
+                    <h1>Instalasi PHP</h1>
+                  </div>
+                  <p class="text-dark">1. Menginstall PHP</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/13. install phpmysql.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita akan menginstall php versi php-mysql dulu dengan cara mengetikkan perintah sudo apt install php-mysql</p>
+
+                  <hr>
+                  <div class="text-center article-title">
+                    <h1>Instalasi & Konfigurasi Database Server (MariaDB)</h1>
+                  </div>
+                  <p class="text-dark">1. Menginstall maria DB</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/4.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita akan menginstall mariaDB versi Server dulu dengan cara mengetikkan perintah sudo apt install mariadb-server</p>
+
+                  <p class="text-dark">2. Konfigurasi maria DB</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/6. setting maria db.png" title="gambar" /><br />
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/7.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita akan melakukan konfigurasi di database, sesuaikan dengan kebutuhan kalian. mulai dari password sampai test database</p>
+
+                  <hr>
+                  <div class="text-center article-title">
+                    <h1>Instalasi FTP Server</h1>
+                  </div>
+                  <p class="text-dark">1. Menginstall FTP - Proftp</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/9.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita akan menginstall ftp versi prostp-basic dulu dengan cara mengetikkan perintah sudo apt install proftpd-basic</p>
+
+                  <hr>
+                  <div class="text-center article-title">
+                    <h1>Pembuatan User dengan Home Direktori di Server</h1>
+                  </div>
+                  <p class="text-dark">1. Membuat user baru di direktori Server</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/10. pembuatan user dengan home direktori di website.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita membuat sebuah user baru dan menginput password baru di direktori yang ada di server (/var/www/html/) dengan perintah sudo useradd -d (direktori) namauser</p>
+
+                  <hr>
+                  <div class="text-center article-title">
+                    <h1>Upload File Website ke server melalui FTP</h1>
+                  </div>
+                  <p class="text-dark">1. Memberi permission di server</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/11. memberi permission akses ftp.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita memberi permission agar kita bisa mengupload file ke server dengan command sudo chmod -R 777 (namafolder), pastikan kita sudah cd ke satu folder sebelumnya</p>
+
+                  <p class="text-dark">2. Memindah File Website ke server dengan FileZilla</p>
+                  <img class="img-fluid rounded mx-auto d-block" src="img/prak14/12. memindah wordpress ke ftp.png" title="gambar" /><br />
+                  <p class="ml-sm-5">Disini kita menggunakan filzilla untuk upload file ke server, saya memasukkan ip yang kita cek tadi, kemudian username dan password user di direktori server kita, kemudian drag and drop file website ke server</p>
+
+
+
+
+
+
+
 
                   <hr/>
                   <div class="row">
